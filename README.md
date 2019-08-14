@@ -1,6 +1,6 @@
 ### dev_projects
 # Program and Web Development Projects for Clients
-## Freelance Group (Name coming soone) main repo
+## Freelance Group (Name coming soon) main repo
 ---
 + This is the main repo that will contain all clients and internal projects.
 + Work as a team
