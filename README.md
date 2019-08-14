@@ -17,5 +17,9 @@
 			+ Android/ - app1 (Android App project files)
 	+ internal/ (folder for internal projects)
 ---
+## Git Workflow
+- After cloning the main folder (dev_projects), branch to work on it.
+- All merges must be approved by one or more other people.
+---
 ## Group Notes
 (Add any notes here)
