@@ -22,12 +22,23 @@ This is the first version of the Hurricane Cycles Website.
   - I will fill this in once I get it set up.
 
 ### Ashley
+- 'System'
+    - 
+    - 
+    - 
+
 ### Elisha
--PC
-    -Stack: AMPPS
-    -
-    -
+- PC
+    - Stack: AMPPS
+    - PHP: 5.6 (AMPPS)
+    - MySQL: TBD
+
 ### Madison
+- 'System'
+    - 
+    - 
+    - 
+
 
 ## Folder Structure
 - root/(hurricane_web_v1)
