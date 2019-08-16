@@ -20,6 +20,7 @@
 ## Git Workflow
 - After cloning the main folder (dev_projects), branch to work on it.
 - All merges must be approved by two or more members of the team.
+- You can merge notes and README's without approval.
 ---
 ## Group Notes
 (Add any notes here)
