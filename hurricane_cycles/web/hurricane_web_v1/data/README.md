@@ -1,0 +1,1 @@
+This is where we will store a SQL dump files to share our databases. As well as other data related files.

@@ -1,0 +1,1 @@
+This is the media folder.  This folder will contain all images, logos, and videos.
