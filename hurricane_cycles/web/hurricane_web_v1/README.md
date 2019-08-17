@@ -34,10 +34,10 @@ This is the first version of the Hurricane Cycles Website.
     - MySQL: TBD
 
 ### Madison
-- 'System'
-    - 
-    - 
-    - 
+- PC
+    - XAMPP 
+    - PHP 7.3.8
+    - MySQL: 5.7
 
 
 ## Folder Structure
