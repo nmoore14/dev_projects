@@ -19,25 +19,27 @@ This is the first version of the Hurricane Cycles Website.
   - PHP: 5.6 - This is the lowest I can go in AMPPS
   - MySQL: 5.6.37
 - Mac
-  - I will fill this in once I get it set up.
+  - Stack: AMPPS
+  - PHP: 5.6 - This is the lowest I can go in AMPPS
+  - MySQL: 5.6.37
 
 ### Ashley
 - 'System'
-    - 
-    - 
-    - 
+  - 
+  - 
+  - 
 
 ### Elisha
 - PC
-    - Stack: AMPPS
-    - PHP: 5.6 (AMPPS)
-    - MySQL: TBD
+  - Stack: AMPPS
+  - PHP: 5.6 (AMPPS)
+  - MySQL: TBD
 
 ### Madison
 - PC
-    - XAMPP 
-    - PHP 7.3.8
-    - MySQL: 5.7
+  - XAMPP 
+  - PHP 7.3.8
+  - MySQL: 5.7
 
 
 ## Folder Structure
@@ -57,11 +59,11 @@ This is the first version of the Hurricane Cycles Website.
 
 ## Site Specs
 - Colors:
-  - Smokey Grey
-  - Seahawk Bright Green
-  - Black
-  - White
-  - Magenta
+  - Smokey Grey - #595959
+  - Seahawk Bright Green - #00ff00
+  - Black - #000000
+  - White - #ffffff
+  - Magenta - #E500E5
 - Fonts:
   - To be determined
 - Frameworks:
