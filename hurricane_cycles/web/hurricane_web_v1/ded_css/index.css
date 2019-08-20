@@ -1,5 +1,6 @@
 /*
 font-family: 'Montserrat', sans-serif;
+font-family: 'Bangers', cursive;
 */
 
 html {
@@ -13,13 +14,16 @@ body {
 	padding: 0;
 }
 
-/* Nav Styling */
-#nav-container {
-	padding: 0;
-}
-
-#search-row {
+/* Dropdown search styling */
+#search-container {
 	padding: 1rem;
+	height: 9rem;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 100;
+	top: -11.5rem;
+	opacity: 0;
+	transition: ease-in-out .15s;
 }
 
 #search {
@@ -31,13 +35,96 @@ body {
 	font-weight: lighter;
 }
 
+/* Nav Styling */
+#nav-container {
+	position: relative;
+	padding: 0;
+}
+
+#nav-row {
+	padding: 1rem;
+}
+
+#nav-row .middleCol {
+	height: 7rem;
+	overflow: hidden;
+}
+
+#nav-row .logoOne {
+	width: 13rem;
+	height: auto;
+	z-index: 100;
+}
+
 nav {
 	padding: 0 !important;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: lighter;
 }
 
-.navbar .navbar-dark .bg-dark {
-	color: white !important;
-	background: black !important;
+.fa-search {
+	color: #00ff00;
+	width: 5rem;
+	height: auto;
+	padding-top: .5rem;
+	font-size: 1.5rem;
+}
+
+.fa-search:hover {
+	cursor: pointer;
+}
+
+/* Banner styling */
+#banner-container {
+	position: relative;
+	padding: 0;
+}
+
+/* Shop Banner Styling */
+.cursive {
+	font-family: 'Bangers', cursive;
+	font-size: 2rem;
+}
+
+#shop-banner {
+	position: relative;
+	background: black;
+	padding: .5rem;
+	padding-top: 1.25rem;
+}
+
+#shop-banner h4 {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.25rem;
+}
+
+/* Newsletter Container styling */
+#newsletter-container {
+	position: relative;
+	padding: 1rem;
+}
+
+.newsletterHeader, .newsletterTag {
+	font-family: 'Montserrat', sans-serif;
+	color: #595959;
+}
+
+#newsletter-container button {
+	padding: .5rem;
+	width: 10rem;
+	background: rgba(0, 0, 0, 0);
+	border: .13rem solid #595959;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	font-weight: lighter;
+	color: #595959;
+	transition: ease-in-out .13s;
+}
+
+#newsletter-container button:hover {
+	background-color: #00ff00;
+	border: .13rem solid #00ff00;
+	border-radius: 1rem;
+	filter: drop-shadow(0px 0px 4px #595959);
 }
