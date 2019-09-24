@@ -47,7 +47,9 @@
             </div>
           </form>
         </div>
-        <div class="col-12 col-md-4 empty"></div>
+        <div class="col-12 col-md-4 empty">
+          <a href="./scripts_admin/base_create_user.php">Generate User</a>
+        </div>
       </div>
     </div>
     
