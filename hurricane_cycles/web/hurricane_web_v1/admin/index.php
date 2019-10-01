@@ -8,6 +8,24 @@
 
 <?php 
   session_start();
+  include('scripts_admin/user_validate.php');
+
+  $isLoggedIn = false;
+
+  if(isset($_POST['submit'])) {
+    checkLogin();
+  }
+
+  function checkLogin() {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $isLoggedIn = verify_user($username, $password);
+
+    if($isLoggedIn){
+      header('Location: http://localhost/dev_project/hurricane_cycles/web/hurricane_web_v1/admin/dashboard.php');
+      exit;
+    }
+  };
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,13 +55,13 @@
         <div class="col-12 col-md-4 empty"></div>
         <div class="col-12 col-md-4">
           <h2 class="display-4 text-center">Welcome</h2>
-          <form action="#" id="login_form" class="loginForm">
+          <form method="POST" action="#" id="login_form" class="loginForm">
             <div class="form-group">
               <input type="text" name="username" id="admin_username_input" class="form-control" placeholder="Username">
               <input type="password" name="password" id="admin_password_input" class="form-control" placeholder="Password">
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btnLogin center-block hidden" id="login_button">Login</button>
+              <button type="submit" class="btn btnLogin center-block hidden" id="login_button" name="submit">Login</button>
             </div>
           </form>
         </div>
