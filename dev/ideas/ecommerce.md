@@ -11,9 +11,12 @@ Provide and maintain backend (database and business logic) for Web App, Desktop 
 
 ### Desktop App
 - Cross Platform: Developed in C++ and/or Java and/or Python
+- Desktop tool for creating marketing campaigns, such as email blasts and social media posts.
 
 ### Mobile App
 - Developed using either native language (Java/Swift) or using Dart and Flutter. (iOS and Android)
+- Scan you physical inventory to update your stores inventory.
+- Take pictures to create marketing campaigns.
 
 ### Custom POS APIs
 - API for connecting an existing POS system to the inventory and customer system.
