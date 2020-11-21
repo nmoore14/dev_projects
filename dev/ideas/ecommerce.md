@@ -20,3 +20,7 @@ Provide and maintain backend (database and business logic) for Web App, Desktop 
 
 ### Custom POS APIs
 - API for connecting an existing POS system to the inventory and customer system.
+
+## Internal
+### Docker
+- To keep environments consistent across developers
