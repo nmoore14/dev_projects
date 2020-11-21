@@ -20,9 +20,10 @@
   - A branch for this project will created. Example: master -> app_branch
   - We will each branch off of the project specific branch when working on that project.
   - First stage of branch naming convention: AREA_TYPE_Title
-    - FRONTEND_LAYOUT_Creating_layout_for_dashboard
-    - BACKEND_ROUTES_Building_API_routes_for_data
-- All merges must be approved by two or more members of the team.
+    - FRONTEND_LAYOUT_Creating_layout_for_dashboard (frontend web)
+    - BACKEND_ROUTES_Building_API_routes_for_data (backend web)
+    - UI_DASHBOARD_Building_main_layout (software)
+- All merges must be approved by other members of the team.
 - You can merge notes and README's without approval.
 ---
 ## Group Notes
