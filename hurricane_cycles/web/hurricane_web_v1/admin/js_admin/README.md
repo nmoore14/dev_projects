@@ -1,1 +1,0 @@
-This is the folder for javascript that the admin section uses.
