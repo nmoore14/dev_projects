@@ -7,5 +7,6 @@ Tags: learning, responsive, development
 Author: Nick Moore
 Author URI: https://nmoore.dev
 */
-html {
-  background-color: aqua; }
+* {
+  margin: 0;
+  padding: 0; }
