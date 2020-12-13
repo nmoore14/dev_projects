@@ -1,9 +1,10 @@
 
 \.DS_Store
-hurricane_cycles/web/hurricane_web_v1/admin/.config/
 projects/wp_themes/*/node_modules/
-projects/wp_themes/*/wordpress-5.6/
-!projects/wp_themes/*/wordpress-5.6/wordpress/wp-content/themes/
-projects/wp_themes/*/wordpress-5.6/wordpress/wp-content/themes/twentynineteen
-projects/wp_themes/*/wordpress-5.6/wordpress/wp-content/themes/twentytwenty
-projects/wp_themes/*/wordpress-5.6/wordpress/wp-content/themes/twentytwentyone
+projects/wp_themes/*/wordpress/*
+!projects/wp_themes/*/wordpress/wp-content
+projects/wp_themes/*/wordpress/wp-content/*
+!projects/wp_themes/*/wordpress/wp-content/themes/
+projects/wp_themes/*/wordpress/wp-content/themes/twentynineteen
+projects/wp_themes/*/wordpress/wp-content/themes/twentytwenty
+projects/wp_themes/*/wordpress/wp-content/themes/twentytwentyone
