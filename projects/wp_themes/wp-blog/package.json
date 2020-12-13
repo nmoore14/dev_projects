@@ -1,0 +1,14 @@
+{
+  "name": "wp-blog",
+  "version": "1.0.0",
+  "description": "WP Blog Theming development folder",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch-nick_1": "node-sass ./wordpress-5.6/wordpress/wp-content/themes/nick-theme-1/assets/sass/styles.scss ./wordpress-5.6/wordpress/wp-content/themes/nick-theme-1/style.css -w"
+  },
+  "author": "Nick Moore",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
