@@ -1,7 +1,7 @@
+(*** UPDATED NOTES IN NOTION ***)
 # dev_projects
 ### Program and Web Development Projects
 ## Dev_Projects main repo
-(*** UPDATED NOTES IN NOTION ***)
 ---
 + This is the main repo that will contain all projects.
 + Work as a team
