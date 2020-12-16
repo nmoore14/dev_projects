@@ -1,0 +1,30 @@
+.container-body {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 10rem auto 10rem;
+    grid-template-rows: 40rem auto;
+    width: 100%;
+    // background: yellow;
+}
+
+.container-header {
+    position: sticky;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.container-content {
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}

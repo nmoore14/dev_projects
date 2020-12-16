@@ -1,5 +1,6 @@
 
 \.DS_Store
+dev/nick/site_designs/*/node_modules
 projects/wp_themes/*/node_modules/
 projects/wp_themes/*/wordpress/*
 !projects/wp_themes/*/wordpress/wp-content

@@ -1,0 +1,15 @@
+{
+  "name": "flex_grid-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+        "sass:watch": "node-sass ./styles/style.scss ./style.css -w"
+
+  },
+  "author": "Nick Moore",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
