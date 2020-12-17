@@ -17,13 +17,60 @@
 
 .hero-card {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100rem;
     height: 40rem;
+    padding: 2rem;
     top: 15rem;
     background-color: rgba(255, 255, 255, .2);
-    border-radius: 1rem;
+    border-radius: 2rem;
     backdrop-filter: blur(30px);
     border: solid 2px transparent;
     background-clip: padding-box;
     box-shadow: 2px 10px 50px rgba(30, 30, 30, .5);
+
+    .hero-card-left {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: space-between;
+        width: 75rem;
+        height: 25rem;
+        top: 1.5rem;
+        left: 1.5rem;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 1rem;
+        z-index: 1;
+
+        p {
+            padding: 1rem;
+            background-color: #45969b;
+            color: white;
+            border-radius: .5rem;
+        }
+
+        .featured-read-more {
+            padding: 1rem;
+            color: white;
+            background: linear-gradient(45deg, #2c5364, #4286f4);
+            border-radius: 1rem;
+        }
+    }
+
+    .hero-card-right {
+        position: absolute;
+        width: 70rem;
+        height: 37rem;
+        right: 1.5rem;
+        top: 1.5rem;
+        background-color: blue;
+        border-radius: 1rem;
+        overflow: hidden;
+        z-index: 0;
+    }
 }

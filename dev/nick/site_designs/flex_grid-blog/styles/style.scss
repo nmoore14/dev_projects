@@ -1,9 +1,12 @@
 @import './base/fonts';
 @import './base/global';
+@import './base/colors';
+@import './base/images';
 
 // Layout settings
 @import './layout/grid';
 
 // Components
 @import './components/nav';
-@import './components/hero'
+@import './components/hero';
+@import './components/buttons';
