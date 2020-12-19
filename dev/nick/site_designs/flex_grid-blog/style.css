@@ -39,6 +39,23 @@ p {
   font-size: 2.5rem;
   text-align: center; }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; }
+  p {
+    font-size: 1rem;
+    line-height: 1.13rem; }
+  .featured-header-1 {
+    font-size: 3rem;
+    text-align: center; }
+  .featured-body-font-1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center; }
+  .featured-read-more-font {
+    font-size: 1.5rem;
+    text-align: center; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -62,30 +79,18 @@ html {
 
 .container-body {
   position: absolute;
-  display: grid;
-  grid-template-columns: 10rem auto 10rem;
-  grid-template-rows: 40rem auto;
-  width: 100%; }
-
-.container-header {
-  position: sticky;
-  grid-row-start: 0;
-  grid-row-end: 1;
-  grid-column-start: 2;
-  grid-column-end: 3;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 1rem 10rem 0 10rem;
+  justify-content: center; }
 
-.container-content {
-  position: relative;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap; }
+@media only screen and (max-width: 1024px) {
+  .container-body {
+    padding: 0;
+    width: 100%;
+    justify-content: center; } }
 
 .main-nav {
   display: flex;
@@ -105,6 +110,17 @@ html {
     .main-nav .nav-items .nav-item {
       margin: .5rem;
       padding: .5rem; }
+  .main-nav .nav-list-items-mobile {
+    display: none; }
+
+@media only screen and (max-width: 1024px) {
+  .main-nav {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; } }
+
+@media only screen and (max-width: 768px) {
+  .main-nav .nav-list-items {
+    display: none; } }
 
 .hero {
   position: relative;
@@ -113,7 +129,7 @@ html {
   flex-wrap: nowrap;
   justify-content: center;
   background-image: url("assets/images/hero-img-3.jpg");
-  background-position: 0px -400px;
+  background-position: 0px -500px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -131,7 +147,7 @@ html {
   width: 100rem;
   height: 40rem;
   padding: 2rem;
-  top: 15rem;
+  top: 20rem;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 2rem;
   backdrop-filter: blur(30px);
@@ -182,6 +198,42 @@ html {
     overflow: hidden;
     z-index: 0; }
 
+@media only screen and (max-width: 1024px) {
+  .hero {
+    position: absolute;
+    background-size: cover;
+    height: 30rem;
+    border-radius: 0; }
+  .hero-card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    height: 40rem;
+    top: 3rem; }
+    .hero-card .hero-card-left {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0); }
+      .hero-card .hero-card-left .bottom {
+        top: 2rem;
+        flex-direction: row;
+        justify-content: center; }
+    .hero-card .hero-card-right {
+      position: relative;
+      width: 100%;
+      top: 0;
+      right: 0; } }
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 22rem; }
+    .hero .hero-card {
+      width: 40rem; } }
+
 .cta-1 {
   cursor: pointer;
   margin: -.5rem .5rem 0 .5rem;
@@ -194,3 +246,15 @@ html {
 .cta-1:hover {
   transform: scale(1.05);
   filter: drop-shadow(0px 0px 8px #00b4db); }
+
+.toggle-btn {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .toggle-btn {
+    display: flex;
+    color: white;
+    background-color: #00b4db;
+    padding: .25rem;
+    border: none;
+    border-radius: .25rem; } }

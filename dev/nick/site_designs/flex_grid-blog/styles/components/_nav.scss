@@ -21,4 +21,23 @@
 
         }
     }
+
+    .nav-list-items-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-nav {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-nav {
+        .nav-list-items {
+            display: none;
+        }
+    }
 }

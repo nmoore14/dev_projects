@@ -16,6 +16,18 @@
                 <div class="brand">
                     <h1 class="display-1">Blog Theme 1</h1>
                 </div>
+                <div class="toggle-btn-container">
+                    <button class="toggle-btn">
+                        <svg :data-src="`https://s.svgbox.net/materialui.svg?ic=${item.name}`" :data-icon="item.name"
+                            :stroke="item.fill_type.indexOf('stroke') !== -1 &amp;&amp; 'currentColor'"
+                            :fill="item.fill_type.indexOf('fill') !== -1 &amp;&amp; 'currentColor'" width="28" height="28" fill="currentColor"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet">
+                            <path xmlns="http://www.w3.org/2000/svg" d="M0 0h24v24H0z" fill="none"></path>
+                            <path xmlns="http://www.w3.org/2000/svg" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                        </svg>
+                    </button>
+                </div>
                 <div class="nav-list-items">
                     <ul class="nav-items">
                         <li class="nav-item">
@@ -29,6 +41,22 @@
                         </li>
                         <li class="nav-item">
                            <button class="cta-1 cta-1-font cta-1-font-color cta-1-bg">Let's Talk</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-list-items-mobile">
+                    <ul class="nav-items">
+                        <li class="nav-item">
+                            Recent
+                        </li>
+                        <li class="nav-item">
+                            About Me
+                        </li>
+                        <li class="nav-item">
+                            Archive
+                        </li>
+                        <li class="nav-item">
+                            <button class="cta-1 cta-1-font cta-1-font-color cta-1-bg">Let's Talk</button>
                         </li>
                     </ul>
                 </div>

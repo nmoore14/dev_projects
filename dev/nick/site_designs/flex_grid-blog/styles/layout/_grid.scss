@@ -4,7 +4,6 @@
     grid-template-columns: 10rem auto 10rem;
     grid-template-rows: 40rem auto;
     width: 100%;
-    // background: yellow;
 }
 
 .container-header {
@@ -27,4 +26,26 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container-body {
+        grid-template-columns: 0 auto 0;
+        grid-template-rows: 40rem auto;
+    }
+    .container-header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container-content {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }

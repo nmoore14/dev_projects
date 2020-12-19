@@ -5,7 +5,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     background-image: url('assets/images/hero-img-3.jpg');
-    background-position: 0px -400px;
+    background-position: 0px -500px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -24,7 +24,7 @@
     width: 100rem;
     height: 40rem;
     padding: 2rem;
-    top: 15rem;
+    top: 20rem;
     background-color: rgba(255, 255, 255, .2);
     border-radius: 2rem;
     backdrop-filter: blur(30px);
@@ -87,5 +87,56 @@
         border-radius: 1rem;
         overflow: hidden;
         z-index: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero {
+        position: absolute;
+        background-size: cover;
+        height: 30rem;
+        border-radius: 0;
+
+    }
+
+    .hero-card {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 60rem;
+        height: 40rem;
+        top: 3rem;
+
+        .hero-card-left {
+            position: relative;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0);
+
+            .bottom {
+                top: 2rem;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+
+        .hero-card-right {
+            position: relative;
+            width: 100%;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: 22rem;
+
+        .hero-card {
+            width: 40rem;
+        }
     }
 }
