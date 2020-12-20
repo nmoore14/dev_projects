@@ -38,9 +38,9 @@ const config = {
         logging: false,
         database: 'vendure',
         host: 'localhost',
-        port: 8080,
+        port: 3306,
         username: 'root',
-        password: 'example',
+        password: 'root_pass',
         migrations: [path.join(__dirname, '../migrations/*.ts')],
     },
     paymentOptions: {

@@ -5,6 +5,7 @@ version: '3.3'
 services:
   db:
     image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
     restart: always
     ports:
       - 3306:3306
@@ -13,3 +14,11 @@ services:
       MYSQL_DATABASE: vendure
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin_pass
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
