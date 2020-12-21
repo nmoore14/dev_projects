@@ -4,7 +4,8 @@
   "description": "WP Blog Theming development folder",
   "main": "index.js",
   "scripts": {
-    "sass:watch:nick-template": "node-sass ./wordpress/wp-content/themes/nick-template/assets/sass/styles.scss ./wordpress/wp-content/themes/nick-template/style.css -w"
+    "sass:watch:nick-template": "node-sass ./wordpress/wp-content/themes/nick-template/assets/sass/styles.scss ./wordpress/wp-content/themes/nick-template/style.css -w",
+    "sass:watch:test_template": "node-sass ./wordpress/wp-content/themes/test_template/assets/sass/styles.scss ./wordpress/wp-content/themes/test_template/style.css -w"
   },
   "author": "Nick Moore",
   "license": "ISC",

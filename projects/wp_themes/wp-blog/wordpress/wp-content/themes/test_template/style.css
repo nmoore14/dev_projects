@@ -1,0 +1,12 @@
+/*
+Theme Name: Test One
+Text Domain: nmoore.dev
+Version: 1.0.0
+Description: Learning WP Theming
+Tags: learning, responsive, development
+Author: Nick Moore
+Author URI: https://nmoore.dev
+*/
+* {
+  margin: 0;
+  padding: 0; }
