@@ -9,3 +9,4 @@ projects/wp_themes/*/wordpress/wp-content/*
 projects/wp_themes/*/wordpress/wp-content/themes/twentynineteen
 projects/wp_themes/*/wordpress/wp-content/themes/twentytwenty
 projects/wp_themes/*/wordpress/wp-content/themes/twentytwentyone
+*.pyc
