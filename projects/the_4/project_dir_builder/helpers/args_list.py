@@ -10,6 +10,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-i', '--interactive', help="Use the interactive shell to build the directory", action="store_true")
 
 # Set directory arguments
+parser.add_argument('-pn', '--project_name', help='Name of project - this will be used for parent dir name', required=True)
 parser.add_argument('-c', '--current', help="Build the project in the current directory", action="store_true")
 parser.add_argument('-p', '--path', help="List the path to the directory that you want the project in.", default="")
 

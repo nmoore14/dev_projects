@@ -5,7 +5,7 @@ import platform
 import json
 
 # Helper imports
-from helpers import args_list
+from helpers import args_list, dir_builder
 
 # Class imports
 
@@ -13,6 +13,8 @@ from helpers import args_list
 user_system = platform.system()
 dir_structure = ''
 dir_path = ''
+project_name = ''
+
 interactive = False
 
 # Set up the argument parser
@@ -31,8 +33,10 @@ for attr, value in args.__dict__.items():
             interactive = True
             break
         else:
-            if attr != 'path' and attr != 'current':
+            if attr != 'path' and attr != 'current' and attr != 'project_name':
                 dir_structure = value
+            elif attr == 'project_name':
+                project_name = value
             elif attr == 'path':
                 dir_path = value
                 print("\n" + attr + " => " + value + "\n")
@@ -43,7 +47,10 @@ if interactive == False:
     try:
         structure = open("assets/directories_json/" + dir_structure + ".json")
         data = json.load(structure)
-        print(data)
+        dir_structure = data['structure']
+        new_project = dir_builder.Dir_Builder(dir_path, project_name, dir_structure)
+        new_project.view_info()
+        new_project.build_project()
         structure.close
     except:
         print("No structure named: " + dir_structure)
