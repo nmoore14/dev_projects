@@ -14,6 +14,7 @@ user_system = platform.system()
 dir_structure = ''
 dir_path = ''
 project_name = ''
+debugging = False
 
 interactive = False
 
@@ -22,9 +23,9 @@ parser = args_list.parser
 args = parser.parse_args()
 
 # To see all available args without typing --help or -h
-# print("\n")
-# print(args)
-# print("\n")
+print("\n")
+print(args)
+print("\n")
 
 for attr, value in args.__dict__.items():
     if value and value is not None:
@@ -40,6 +41,8 @@ for attr, value in args.__dict__.items():
             elif attr == 'path':
                 dir_path = value
                 print("\n" + attr + " => " + value + "\n")
+            elif attr == 'debug' and value:
+               debugging = True
             else:
                 dir_path = os.getcwd()
 
@@ -49,8 +52,12 @@ if interactive == False:
         data = json.load(structure)
         dir_structure = data['structure']
         new_project = dir_builder.Dir_Builder(dir_path, project_name, dir_structure, user_system)
-        new_project.view_info()
-        new_project.build_project()
+
+        if debugging:
+            new_project.view_info()
+        else:
+            new_project.build_project()
+
         structure.close
     except:
         print("No structure named: " + dir_structure)
