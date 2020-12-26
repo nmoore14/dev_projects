@@ -48,7 +48,7 @@ if interactive == False:
         structure = open("assets/directories_json/" + dir_structure + ".json")
         data = json.load(structure)
         dir_structure = data['structure']
-        new_project = dir_builder.Dir_Builder(dir_path, project_name, dir_structure)
+        new_project = dir_builder.Dir_Builder(dir_path, project_name, dir_structure, user_system)
         new_project.view_info()
         new_project.build_project()
         structure.close
