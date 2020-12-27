@@ -42,22 +42,32 @@ for attr, value in args.__dict__.items():
                 dir_path = value
                 print("\n" + attr + " => " + value + "\n")
             elif attr == 'debug' and value:
-               debugging = True
+                print("Debugging set")
+                debugging = True
             else:
                 dir_path = os.getcwd()
 
 if interactive == False:
-    try:
-        structure = open("assets/directories_json/" + dir_structure + ".json")
-        data = json.load(structure)
-        dir_structure = data['structure']
-        new_project = dir_builder.Dir_Builder(dir_path, project_name, dir_structure, user_system)
-
-        if debugging:
-            new_project.view_info()
-        else:
+    if debugging == False:
+        try:
+            structure = open("assets/directories_json/" + dir_structure + ".json")
+            data = json.load(structure)
+            dir_structure = data['structure']
+            new_project = dir_builder.Dir_Builder(dir_path, project_name, dir_structure, user_system)
             new_project.build_project()
+            structure.close
+        except:
+            print("No structure named: " + dir_structure)
+    else:
+        try:
+            print("Debugging...")
+            structure = open("assets/directories_json/" + dir_structure + ".json")
+            data = json.load(structure)
+            dir_structure = data['structure']
+            new_project = dir_builder.Dir_Builder(dir_path, project_name, dir_structure, user_system)
+            new_project.view_info()
+        except:
+            print("Can't debug info passed...look somewhere else.")
+else:
+    print("Coming soon...")
 
-        structure.close
-    except:
-        print("No structure named: " + dir_structure)

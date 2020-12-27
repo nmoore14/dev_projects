@@ -47,6 +47,7 @@ class Dir_Builder:
             print("Can't create file => " + file_name)
 
     def view_info(self):
+        print("Debugging received info...")
         print("Path: " + self.path)
         print("Name: " + self.name)
         print("Structure: " + str(self.structure))
