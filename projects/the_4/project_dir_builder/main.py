@@ -36,19 +36,30 @@ for attr, value in args.__dict__.items():
         else:
             if attr != 'path' and attr != 'current' and attr != 'project_name':
                 dir_structure = value
+            elif attr == 'debug' and value:
+                print("Debugging set")
+                debugging = True
             elif attr == 'project_name':
                 project_name = value
             elif attr == 'path':
                 dir_path = value
                 print("\n" + attr + " => " + value + "\n")
-            elif attr == 'debug' and value:
-                print("Debugging set")
-                debugging = True
             else:
                 dir_path = os.getcwd()
 
 if interactive == False:
-    if debugging == False:
+    if debugging:
+        try:
+            print("Debugging...")
+            structure = open("assets/directories_json/" + dir_structure + ".json")
+            data = json.load(structure)
+            dir_structure = data['structure']
+            new_project = dir_builder.Dir_Builder(dir_path, project_name, dir_structure, user_system)
+            new_project.view_info()
+            structure.close()
+        except:
+            print("Can't debug info passed...look somewhere else.")
+    else:
         try:
             structure = open("assets/directories_json/" + dir_structure + ".json")
             data = json.load(structure)
@@ -58,16 +69,6 @@ if interactive == False:
             structure.close
         except:
             print("No structure named: " + dir_structure)
-    else:
-        try:
-            print("Debugging...")
-            structure = open("assets/directories_json/" + dir_structure + ".json")
-            data = json.load(structure)
-            dir_structure = data['structure']
-            new_project = dir_builder.Dir_Builder(dir_path, project_name, dir_structure, user_system)
-            new_project.view_info()
-        except:
-            print("Can't debug info passed...look somewhere else.")
 else:
     print("Coming soon...")
 
