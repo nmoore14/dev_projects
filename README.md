@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (*** UPDATED NOTES IN NOTION ***)
 # dev_projects
 ### Program and Web Development Projects
@@ -30,3 +31,25 @@
 ## Group Notes
 (Add any notes here)
 test
+=======
+# dev-project-site
+
+## Build Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+>>>>>>> a2dbdbd (Adding new Site project folder)
