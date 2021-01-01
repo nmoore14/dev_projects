@@ -10,6 +10,7 @@ projects/wp_themes/*/wordpress/wp-content/*
 projects/wp_themes/*/wordpress/wp-content/themes/twentynineteen
 projects/wp_themes/*/wordpress/wp-content/themes/twentytwenty
 projects/wp_themes/*/wordpress/wp-content/themes/twentytwentyone
+<<<<<<< HEAD
 =======
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
@@ -102,3 +103,7 @@ sw.*
 # Vim swap files
 *.swp
 >>>>>>> a2dbdbd (Adding new Site project folder)
+=======
+
+*.pyc
+>>>>>>> 7dde022c (Fixing sub git issues)
