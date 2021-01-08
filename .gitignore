@@ -112,3 +112,4 @@ sw.*
 
 *.pyc
 >>>>>>> master
+projects/web/dev-projects-site/package-lock.json
