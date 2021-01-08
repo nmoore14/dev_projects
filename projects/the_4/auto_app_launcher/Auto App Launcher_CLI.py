@@ -9,8 +9,9 @@ apps = []# populate this list with exe files
 while running:
     user_input
 
-    if user_input == 1:
-        print("Select the apps you would like to add to your list")
+    if user_input == "1":
+        selection = input("Select the apps you would like to add to your list")
+        
         #find a way to open file explorer
     elif user_input == 2:
         print("Launching Selected Applications")    
