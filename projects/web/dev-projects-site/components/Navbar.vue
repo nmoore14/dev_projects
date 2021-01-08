@@ -29,27 +29,5 @@ export default {
 </script>
 
 <style>
-  .custom-round-r {
-    border-radius: 0 1.75rem 1.75rem 0;
-    background: linear-gradient(45deg, #0f0c29, #302b63);
-  }
 
-  .custom-round-l {
-    border-radius: 1.75rem 0 0 1.75rem;
-    background: linear-gradient(45deg, #302b63, #0f0c29);
-  }
-
-  #menu a {
-    @apply text-gray-300;
-    font-family: 'Fira Code', monospace;
-    font-size: 1.25rem;
-    font-weight: 500;
-  }
-
-  #brand h1 {
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 3rem;
-  }
 </style>
