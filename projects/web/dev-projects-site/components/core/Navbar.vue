@@ -29,5 +29,7 @@ export default {
 </script>
 
 <style>
-
+  header {
+    background: linear-gradient(45deg,#86fde8,#acb6e5);
+  }
 </style>
