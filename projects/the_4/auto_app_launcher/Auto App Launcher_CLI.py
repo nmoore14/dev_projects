@@ -1,10 +1,10 @@
 import os
 
-#user_Input = input("Enter the file you would like to run: ")
+user_Input = input("Enter the Directory of the apllication you would like to run: ")
 
 def openFile():
     try:
-        os.startfile("E:\Steam\steam.exe")
+        os.startfile(user_Input)
         print("Opening application... \n|Please Wait|")
 
     except:
