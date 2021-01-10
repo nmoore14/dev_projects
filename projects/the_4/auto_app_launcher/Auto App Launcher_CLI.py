@@ -1,20 +1,14 @@
 import os
 
-running = True
+#user_Input = input("Enter the file you would like to run: ")
 
-print("(1)Add applications:", "\n(2)Launch applications:", "\n(3) Exit")
-user_input = input("Select one of the following: ")
-apps = []# populate this list with exe files
+def openFile():
+    try:
+        os.startfile("E:\Steam\steam.exe")
+        print("Opening application... \n|Please Wait|")
 
-while running:
-    user_input
+    except:
+        print("Unhandled Exception")
 
-    if user_input == "1":
-        selection = input("Select the apps you would like to add to your list")
-        
-        #find a way to open file explorer
-    elif user_input == 2:
-        print("Launching Selected Applications")    
-    else:
-        print("End Program")
-        running = False
+openFile()
+print("Operation Complete")
