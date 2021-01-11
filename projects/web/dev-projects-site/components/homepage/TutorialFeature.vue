@@ -18,11 +18,7 @@
           <div class="flex-grow">
             <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Shooting Stars</h2>
             <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center">Dive In
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
+            <AniOutlineButton title="first-cta-button" text="Dive In!"/>
           </div>
         </div>
         <div class="p-4 md:w-1/3 flex flex-col text-center items-center nue-card">
@@ -36,11 +32,7 @@
           <div class="flex-grow">
             <h2 class="text-gray-900 text-lg title-font font-medium mb-3">The Catalyzer</h2>
             <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center">Dive In
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
+            <AniOutlineButton title="second-cta-button" text="Dive In!"/>
           </div>
         </div>
         <div class="p-4 md:w-1/3 flex flex-col text-center items-center nue-card">
@@ -53,11 +45,7 @@
           <div class="flex-grow">
             <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Neptune</h2>
             <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center">Dive In
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
+            <AniOutlineButton title="third-cta-button" text="Dive In!"/>
           </div>
         </div>
       </div>
@@ -67,8 +55,15 @@
 </template>
 
 <script>
+import OutlineButton from '@/components/cta/OutlineButton'
+import AniOutlineButton from '@/components/cta/animated/AniOutlineButton'
+
 export default {
-  name: 'Tutorial Feature'
+  name: 'TutorialFeature',
+  components: [
+    OutlineButton,
+    AniOutlineButton
+  ]
 }
 </script>
 
