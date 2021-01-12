@@ -2,7 +2,7 @@
   <div id="main-home" class="flex flex-col min-h-screen flex-nowrap">
     <Hero />
     <BlogStart />
-    <TutorialFeature />
+    <TutorialFeatured :featuredTutorials="featuredTutorials" v-if="featuredTutorials"/>
     <Creators />
   </div>
 </template>
@@ -10,16 +10,31 @@
 <script>
 import Hero from '@/components/homepage/Hero'
 import BlogStart from '@/components/homepage/BlogStart'
-import TutorialFeature from '@/components/homepage/TutorialFeature'
+import TutorialFeatured from '@/components/homepage/TutorialFeatured'
 import Creators from '@/components/homepage/Creators'
 
 export default {
   components: {
     Hero,
     BlogStart,
-    TutorialFeature,
+    TutorialFeatured,
     Creators
-  }
+  },
+  data() {
+    return {
+    }
+  },
+  async asyncData({ $content, params }) {
+    const featuredTutorials = await $content('tutorials', params.slug)
+    .only(['title', 'description', 'slug', 'tags', 'featured'])
+    .where({featured: true})
+    .sortBy('index')
+    .fetch()
+
+    return {
+      featuredTutorials
+    }
+  },
 }
 </script>
 
