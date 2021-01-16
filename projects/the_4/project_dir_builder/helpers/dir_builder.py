@@ -15,19 +15,16 @@ class Dir_Builder:
         else:
             return "/"
 
-    def build_project(self):
-        new_dir = self.path + self.sep + self.name
-        try:
-            os.mkdir(new_dir)
-            print("Parent directory created: " + self.name)
-            for key, value in self.structure.items():
-                if key == 'files':
-                    for f in value:
-                        self.add_files(new_dir, f)
-                else:
-                    break
-        except:
-            print("Can't build new directory => " + self.name)
+# TODO: Loop through the files in the current diretory, then proceed to the next directory
+
+    def build_project(self, structure):
+       # new_dir = self.path + self.sep + self.name
+       # for key, value in self.structure.items():
+       # TODO: Get the project structure
+       # TODO: Loop through the structure
+            # TODO: Create all of the files in the folder
+            # TODO: Create all of the directories in the folder
+                # TODO: If the directory has it's own structure, recall this loop
 
     def build_dir(self, path, name, structure):
         try:
