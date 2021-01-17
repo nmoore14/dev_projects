@@ -1,5 +1,5 @@
 <template>
-  <div id="main-container" class="flex flex-col w-full">
+  <div id="main-container" class="absolute flex flex-col w-full">
     <Navbar />
     <Nuxt />
     <Footer />
