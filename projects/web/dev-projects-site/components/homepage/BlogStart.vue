@@ -1,8 +1,8 @@
 <template>
-  <div class="text-gray-600 body-font">
+  <div class="text-gray-600 body-font blogStart">
     <div class="relative z-10 container flex flex-wrap px-5 py-24 mx-auto items-center">
       <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">What's on our mind?!</h1>
         <p class="leading-relaxed text-base">Locavore cardigan small batch roof party blue bottle blog meggings sartorial jean shorts kickstarter migas sriracha church-key synth succulents. Actually taiyaki neutra, distillery gastropub pok pok ugh.</p>
         <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -50,5 +50,7 @@ export default {
 </script>
 
 <style>
-
+  .blogStart {
+    background-color: #e0e6ec;
+  }
 </style>

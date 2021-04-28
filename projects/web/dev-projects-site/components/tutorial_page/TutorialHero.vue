@@ -8,28 +8,33 @@
     <div class="absolute container mx-auto md:ml-24 flex h-full px-5 py-24 md:flex-row flex-col items-center z-10" id="hero-container">
       <div class="hidden md:flex lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
       </div>
-      <div class="flex flex-col p-4 items-start text-left items-center rounded-lg bg-gray-100" id="hero-text-container">
-        <h1 class="w-full sm:text-4xl text-3xl mb-4 font-medium text-center md:text-left text-gray-900">
-          Welcome to Dev Project
-        </h1>
-        <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-        <div class="flex w-full justify-center md:justify-start">
-          <button class="flex flex-row flex-nowrap items-center w-2/3 md:w-1/3 ml-4 inline-flex text-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg text-center">
-            Find out more!
-          </button>
-        </div>
-      </div>
+          <div class="flex flex-col p-4 items-start text-left items-center rounded-lg bg-gray-100" id="hero-text-container">
+            <h1 class="w-full sm:text-4xl text-3xl mb-4 font-medium text-center md:text-left text-gray-900">
+              Welcome to Dev Project
+            </h1>
+            <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+            <div class="flex w-full justify-center md:justify-start">
+              <button class="flex flex-row flex-nowrap items-center w-2/3 md:w-1/3 ml-4 inline-flex text-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg text-center">
+                Find out more!
+              </button>
+            </div>
+          </div>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'Hero'
+  name: 'Hero',
+  components: {
+    Carousel,
+    Slide
+  }
 }
 </script>
 
-<style>
+<style lang="scss">
   #hero-main {
     background: linear-gradient(45deg,#86fde8,#acb6e5);
   }
