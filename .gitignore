@@ -10,3 +10,6 @@ projects/wp_themes/*/wordpress/wp-content/themes/twentynineteen
 projects/wp_themes/*/wordpress/wp-content/themes/twentytwenty
 projects/wp_themes/*/wordpress/wp-content/themes/twentytwentyone
 *.pyc
+projects/web/dev-projects-site/.firebase
+projects/web/dev-projects-site/.nuxt
+projects/web/dev-projects-site/node_modules
