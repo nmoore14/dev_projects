@@ -1,0 +1,16 @@
+{
+  "name": "web",
+  "structure": {
+    "files": ["index.html"],
+    "directories": {
+      "css": {
+        "name": "ded_css",
+        "files": ["main.css"]
+      },
+      "js": {
+        "name": "ded_js",
+        "files": ["main.js"]
+      }
+    }
+  }
+}
