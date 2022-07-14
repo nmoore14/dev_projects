@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 (*** UPDATED NOTES IN NOTION ***)
 # dev_projects
 ### Program and Web Development Projects
@@ -52,4 +51,3 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
->>>>>>> a2dbdbd (Adding new Site project folder)
